@@ -12,22 +12,32 @@ Estrutura e principais componentes.
 
 Atributos:
 descricao (String): descrição da despesa.
+
 valor (double): valor da despesa.
+
 dataVencimento (String): data de vencimento da despesa.
+
 categoria (String): categoria da despesa.
+
 pago (boolean): indica se a despesa foi paga ou não.
 
 Métodos:
 getDescricao(): Retorna a descrição da despesa.
+
 getValor(): Retorna o valor da despesa.
+
 getDataVencimento(): Retorna a data de vencimento da despesa.
+
 isPago(): Retorna se a despesa está paga.
+
 setPago(boolean pago): Define o status de pagamento.
+
 calcularMulta(): Método abstrato para calcular multas, a ser implementado nas subclasses.
 
 # Transporte.java: Extende a classe Despesa e cria suas regras próprias, como o cálculo de multas para transporte.
 
 Métodos:
+
 calcularMulta(): Calcula a multa da despesa de transporte.
 
 # Alimentacao.java: Classe semelhante, que poderá ser expandida para incluir suas próprias regras no futuro.
@@ -42,9 +52,13 @@ despesas (ArrayList<Despesa>): lista de todas as despesas registradas.
 
 Métodos:
 entrarDespesa(Despesa despesa): Adiciona uma nova despesa à lista.
+
 anotarPagamento(String descricao): Marca a despesa com a descrição fornecida como paga.
+
 listarDespesas(boolean pagas): Lista as despesas com base no status de pagamento.
+
 carregarDespesas(): Carrega as despesas salvas de um arquivo despesas.dat.
+
 salvarDespesas(): Salva as despesas em um arquivo despesas.dat para persistência de dados.
 
 # Salvar e Carregar Despesas: Ao salvar, todas as despesas são gravadas em um arquivo de texto chamado despesas.dat. Isso permite que o sistema seja reiniciado sem perda de dados.
@@ -58,12 +72,16 @@ Usuario.java
 
 Atributos:
 login (String): nome de usuário.
+
 senhaCriptografada (String): senha do usuário, criptografada com SHA-256.
 
 Métodos:
 Usuario(String login, String senha): Construtor que cria um usuário e criptografa sua senha.
+
 criptografarSenha(String senha): Método privado que criptografa a senha usando SHA-256.
+
 verificarSenha(String senha): Verifica se a senha fornecida corresponde à senha armazenada.
+
 salvarUsuario(String login, String senha): Salva o login e a senha criptografada em um arquivo usuarios.txt.
 
 # 4. Arquivos de Texto
