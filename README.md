@@ -1,7 +1,7 @@
 # Sistema de Gerenciamento de Despesas
    O projeto foi desenvolvido para facilitar o controle e gerenciamento de despesas de uma maneira simples e funcional. A ideia principal é que o usuário registre diferentes tipos de despesas, acompanhe quais foram pagas e que consiga salvar e carregar essas informações. Além disso, o sistema tem uma camada de segurança ao gerenciar usuários, com criptografia de senhas. 
 
-Estrutura e principais componentes.
+# Estrutura e principais componentes:
 
 # Estrutura do Sistema
 
