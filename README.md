@@ -11,6 +11,7 @@ Estrutura e principais componentes.
 # Despesa.java: Classe abstrata que define a estrutura de uma despesa, incluindo descrição, valor e data de vencimento.
 
 Atributos:
+
 descricao (String): descrição da despesa.
 
 valor (double): valor da despesa.
@@ -22,6 +23,7 @@ categoria (String): categoria da despesa.
 pago (boolean): indica se a despesa foi paga ou não.
 
 Métodos:
+
 getDescricao(): Retorna a descrição da despesa.
 
 getValor(): Retorna o valor da despesa.
@@ -48,9 +50,11 @@ calcularMulta(): Calcula a multa da despesa de transporte.
 SistemaDespesas.java
 
 Atributos:
+
 despesas (ArrayList<Despesa>): lista de todas as despesas registradas.
 
 Métodos:
+
 entrarDespesa(Despesa despesa): Adiciona uma nova despesa à lista.
 
 anotarPagamento(String descricao): Marca a despesa com a descrição fornecida como paga.
@@ -71,11 +75,13 @@ Armazenamento de Usuários: Os usuários são salvos em um arquivo de texto (usu
 Usuario.java
 
 Atributos:
+
 login (String): nome de usuário.
 
 senhaCriptografada (String): senha do usuário, criptografada com SHA-256.
 
 Métodos:
+
 Usuario(String login, String senha): Construtor que cria um usuário e criptografa sua senha.
 
 criptografarSenha(String senha): Método privado que criptografa a senha usando SHA-256.
