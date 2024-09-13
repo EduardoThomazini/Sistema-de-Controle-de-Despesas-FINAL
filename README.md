@@ -99,9 +99,12 @@ tipos_despesas.txt: Serve como catálogo para os diferentes tipos de despesas qu
 usuarios.txt: Contém o login e a senha criptografada dos usuários cadastrados no sistema.
 
 # Como Usar o Sistema
-Registrar uma Despesa: A qualquer momento, uma nova despesa pode ser registrada, informando a descrição, valor e data de vencimento. O sistema também permite colocar as despesas em suas devidas categorias, como transporte ou alimentação.
+   Registrar uma Despesa: A qualquer momento, uma nova despesa pode ser registrada, informando a descrição, valor e data de vencimento. O sistema também permite colocar as despesas em suas devidas categorias, como transporte ou alimentação.
+   
 Anotar Pagamento: Quando uma despesa for paga, o sistema pode marcá-la como "paga", permitindo um controle fácil sobre os gastos pagos e não pagos.
+
 Listar Despesas: É possível listar tanto as despesas pagas quanto as não pagas. Isso dá ao usuário uma visão bem abrangente da situação financeira.
+
 Gerenciamento de Usuários: O sistema permite criar novos usuários e realizar o login de forma segura, com a criptografia de senhas.
 
 # Conclusão
