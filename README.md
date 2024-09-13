@@ -3,7 +3,6 @@
 
 # Estrutura e principais componentes:
 
-# Estrutura do Sistema
 
 # 1. Classes de Despesas
    O sistema gira em torno da classe Despesa, que está ali para representar qualquer tipo de gasto. Essa classe é complementada por subclasses como Transporte e Alimentação, que permite estender o comportamento padrão com coisas proprias de cada tipo de despesa. Essa separação ajuda a manter o código organizado e fácil de expandir no futuro.
