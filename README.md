@@ -10,7 +10,7 @@ Estrutura e principais componentes.
 
 # Despesa.java: Classe abstrata que define a estrutura de uma despesa, incluindo descrição, valor e data de vencimento.
 
-Atributos:
+# Atributos:
 
 descricao (String): descrição da despesa.
 
@@ -22,7 +22,7 @@ categoria (String): categoria da despesa.
 
 pago (boolean): indica se a despesa foi paga ou não.
 
-Métodos:
+# Métodos:
 
 getDescricao(): Retorna a descrição da despesa.
 
@@ -38,7 +38,7 @@ calcularMulta(): Método abstrato para calcular multas, a ser implementado nas s
 
 # Transporte.java: Extende a classe Despesa e cria suas regras próprias, como o cálculo de multas para transporte.
 
-Métodos:
+# Métodos:
 
 calcularMulta(): Calcula a multa da despesa de transporte.
 
@@ -47,13 +47,13 @@ calcularMulta(): Calcula a multa da despesa de transporte.
 # 2. Sistema de Gerenciamento de Despesas
    A classe SistemaDespesas é o coração do sistema. Ela gerencia o registro de novas despesas, mostra a lista de despesas pagas ou não, e oferece métodos para salvar e carregar as despesas de um arquivo para o salvamento dos dados. Permitindo que o usuário não perca suas anotações quando o sistema for finalizado.
 
-SistemaDespesas.java
+# SistemaDespesas.java
 
-Atributos:
+# Atributos:
 
 despesas (ArrayList<Despesa>): lista de todas as despesas registradas.
 
-Métodos:
+# Métodos:
 
 entrarDespesa(Despesa despesa): Adiciona uma nova despesa à lista.
 
@@ -65,22 +65,21 @@ carregarDespesas(): Carrega as despesas salvas de um arquivo despesas.dat.
 
 salvarDespesas(): Salva as despesas em um arquivo despesas.dat para persistência de dados.
 
-# Salvar e Carregar Despesas: Ao salvar, todas as despesas são gravadas em um arquivo de texto chamado despesas.dat. Isso permite que o sistema seja reiniciado sem perda de dados.
 
 # 3. Usuários e Segurança
    O sistema também inclui a classe Usuario, que adiciona uma camada de segurança. Aqui as senhas dos usuários são criptografadas usando o algoritmo SHA-256, garantindo que, mesmo que o arquivo de usuários seja acessado, as senhas estarão escondidas.
 Verificação de Senha: Toda vez que um usuário tenta fazer login, a senha fornecida é criptografada e comparada com a senha armazenada de forma segura.
 Armazenamento de Usuários: Os usuários são salvos em um arquivo de texto (usuarios.txt) em um formato simples e facil de entender.
 
-Usuario.java
+# Usuario.java
 
-Atributos:
+# Atributos:
 
 login (String): nome de usuário.
 
 senhaCriptografada (String): senha do usuário, criptografada com SHA-256.
 
-Métodos:
+# Métodos:
 
 Usuario(String login, String senha): Construtor que cria um usuário e criptografa sua senha.
 
@@ -92,8 +91,11 @@ salvarUsuario(String login, String senha): Salva o login e a senha criptografada
 
 # 4. Arquivos de Texto
 Os arquivos de texto despesas.txt, tipos_despesas.txt e usuarios.txt servem como fontes para armazenar e acessar dados do sistema, oferecendo uma interface de facil entendimento.
+
 despesas.txt: Lista de despesas que pode ser visualizada ou manipulada diretamente.
+
 tipos_despesas.txt: Serve como catálogo para os diferentes tipos de despesas que podem ser cadastradas.
+
 usuarios.txt: Contém o login e a senha criptografada dos usuários cadastrados no sistema.
 
 # Como Usar o Sistema
